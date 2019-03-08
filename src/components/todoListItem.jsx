@@ -10,7 +10,7 @@ class TodoListItem extends React.Component {
   }
 
   handleClick(e) {
-    console.log(this.state.strike)
+    e.preventDefault();
     if (this.state.strike === 'none') {
       this.setState({
         strike: 'line-through',

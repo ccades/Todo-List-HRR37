@@ -27,6 +27,7 @@ class Todo extends React.Component {
   }
 
   handleClick(e) {
+    e.preventDefault()
     var allTodos = this.state.todos
     if (this.state.newTodo.length > 0) {
       allTodos.push(this.state.newTodo)
